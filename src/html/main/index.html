@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>CalcLogic</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="../../css/main/style.css" type="text/css">
+</head>
+<body>
+	<div class="container-header">
+		<div class="container-name">
+			<a class="name-button" href="">ВАШЕ ИМЯ</a>
+		</div>
+		<div class="container-menu">
+			<a class="menu-button" href="">Обучение</a>
+			<a class="menu-button" href="">О нас</a>
+			<a class="menu-button" href="">Контакты</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="container-settings">
+			<input class="func-button" type="button" value="Настройки">
+			<p>
+				<span class="info">Описание</span>
+			</p>
+			<p>
+				<span class="info-text">Данная функция строит таблицу истинности на основе логического выражения</span>
+			</p>
+			<p>
+				<span class="info-text">Данная функция выполняет минимизацию логического выражения с помощью карт Карно</span>
+			</p>
+		</div>
+		<div class="container-calc">
+			<div>
+				<form>
+					<input id="func-input" type="text" placeholder="Введите логическое выражение">
+				</form>
+			</div>
+			<div>
+				<input class="calc-button" type="button" value="A" onclick="addCurrentValue('A');">
+				<input class="calc-button" type="button" value="B" onclick="addCurrentValue('B');">
+				<input class="calc-button" type="button" value="C" onclick="addCurrentValue('C');">
+				<input class="calc-button" type="button" value="<-" onclick="removeLastSymbol();">
+			</div>
+			<div>
+				<input class="calc-button" type="button" value="D" onclick="addCurrentValue('D');">
+				<input class="calc-button" type="button" value="E" onclick="addCurrentValue('E');">
+				<input class="calc-button" type="button" value="F" onclick="addCurrentValue('F');">
+				<input class="calc-button" type="button" value="G" onclick="addCurrentValue('G');">
+			</div>
+			<div>
+				<input class="calc-button" type="button" value="+" onclick="addCurrentValue('+');">
+				<input class="calc-button" type="button" value="*" onclick="addCurrentValue('*');">
+				<input class="calc-button" type="button" value="(" onclick="addCurrentValue('(');">
+				<input class="calc-button" type="button" value=")" onclick="addCurrentValue(')');">
+			</div>
+			<div>
+				<input class="calc-button" type="button" value="0" onclick="addCurrentValue('0');">
+				<input class="calc-button" type="button" value="1" onclick="addCurrentValue('1');">
+				<input class="calc-button" type="button" value="!" onclick="addCurrentValue('!');">
+				<input class="calc-button" type="button" value="go">
+			</div>
+		</div>
+		<div class="container-func">
+			<input class="func-button" type="button" value="Построение таблицы истинности">
+			<input class="func-button" type="button" value="Минимизация картами Карно">
+		</div>
+	</div>
+	<script src="../../js/main/main.js"></script>
+</body>
+</html>
