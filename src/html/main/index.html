@@ -33,7 +33,7 @@
 		<div class="container-calc">
 			<div>
 				<form>
-					<input id="func-input" type="text" placeholder="Введите логическое выражение">
+					<input id="func-input" type="text" placeholder="Введите выражение">
 				</form>
 			</div>
 			<div>
@@ -58,7 +58,7 @@
 				<input class="calc-button" type="button" value="0" onclick="addCurrentValue('0');">
 				<input class="calc-button" type="button" value="1" onclick="addCurrentValue('1');">
 				<input class="calc-button" type="button" value="!" onclick="addCurrentValue('!');">
-				<input class="calc-button" type="button" value="go">
+				<input class="calc-button" type="button" value="go" onclick="parser();">
 			</div>
 		</div>
 		<div class="container-func">
@@ -67,5 +67,7 @@
 		</div>
 	</div>
 	<script src="../../js/main/main.js"></script>
+	<script src="../../js/struct/ParseTree.js"></script>
+	<script src="../../../test/mainTest.js"></script>
 </body>
 </html>
