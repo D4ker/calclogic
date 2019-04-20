@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CalcLogic</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href="../../css/main/style.css" type="text/css">
 </head>
 <body>
@@ -58,16 +58,18 @@
 				<input class="calc-button" type="button" value="0" onclick="addCurrentValue('0');">
 				<input class="calc-button" type="button" value="1" onclick="addCurrentValue('1');">
 				<input class="calc-button" type="button" value="!" onclick="addCurrentValue('!');">
-				<input class="calc-button" type="button" value="go" onclick="parser();">
+				<input class="calc-button" type="button" value="go" onclick="getParseTree(document.getElementById('func-input').value);">
 			</div>
 		</div>
 		<div class="container-func">
-			<input class="func-button" type="button" value="Построение таблицы истинности">
-			<input class="func-button" type="button" value="Минимизация картами Карно">
+			<input class="func-button" type="button" value="Построение таблицы истинности" onclick="createTruthTable();">
+			<input class="func-button" type="button" value="Минимизация картами Карно" onclick="createKarnaughMap();">
+			<input class="func-button" type="button" value="Получение ДНФ и КНФ" onclick="createDisConNormForm();">
 		</div>
 	</div>
-	<script src="../../js/main/main.js"></script>
 	<script src="../../js/struct/ParseTree.js"></script>
-	<script src="../../../test/mainTest.js"></script>
+	<script src="../../js/struct/parser.js"></script>
+	<script src="../../../test/parserTest.js"></script>
+	<script src="../../js/main/main.js"></script>
 </body>
 </html>
