@@ -13,4 +13,7 @@ class Node {
 		this.left = null;
 		this.right = null;
 	}
+	get getValue() {
+		return this.value;
+	}
 };

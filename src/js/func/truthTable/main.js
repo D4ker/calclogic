@@ -4,12 +4,11 @@ getTruthTable() из truthTable.js */
 // Главная функция, которая обязательно выполнится при первом запуске страницы
 function main() {
 	let currentURL = window.location.href;
-	let truthTable = getTruthTable(currentURL.split('?')[1]); /* Взять данные из ссылки, расположенные после первого знака ?, 
+	let truthTable = getTruthTable(currentURL.split('?')[1]); /* Взять данные из ссылки, расположенные после первого знака ?,
 	и построить на их основе таблицу истинности */
 
-	// КОД
+
 };
 
-// КОД
 
 main(); // Запустить главную функцию
