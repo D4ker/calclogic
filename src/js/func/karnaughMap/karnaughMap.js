@@ -96,8 +96,6 @@ function deleteElementHor(j) {
 	delete lastColumnArrayHor[j];
 }
 
-
-
 let array = [
 	[0, 0, 0, 0, 0, 0, 0, 0],
 	[0, 0, 0, 0, 0, 0, 0, 0],
